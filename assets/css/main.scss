@@ -8,36 +8,53 @@
    sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
  */
 
-@import
-    "vendor/breakpoint/breakpoint",
+@import "vendor/breakpoint/breakpoint", "themes",
+  "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
+  "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
+  "include/mixins", "vendor/susy/susy", "layout/reset", "layout/base",
+  "include/utilities", "layout/tables", "layout/buttons", "layout/notices",
+  "layout/masthead", "layout/navigation", "layout/footer", "syntax",
+  "layout/forms", "layout/page", "layout/archive", "layout/sidebar",
+  "layout/json_cv", "vendor/font-awesome/fontawesome",
+  "vendor/font-awesome/solid", "vendor/font-awesome/brands";
+/* === Fonts (loaded last, overrides theme) === */
+@import url("https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap");
 
-    "themes",
-    "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
-    "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
+/* Global */
+html,
+body {
+  font-family: "Tinos", serif !important;
+}
 
-    "include/mixins",
-    "vendor/susy/susy",
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Tinos", serif !important;
+  font-weight: 700;
+}
 
-    "layout/reset",
-    "layout/base",
+/* Sidebar, meta, nav */
+.sidebar,
+.sidebar *,
+.author__content,
+.author__urls-wrapper,
+.page__meta,
+.nav__list a,
+footer {
+  font-family: "Tinos", serif !important;
+}
 
-    "include/utilities",
-    "layout/tables",
-    "layout/buttons",
-    "layout/notices",
-    "layout/masthead",
-    "layout/navigation",
-    "layout/footer",
-    "syntax",
-
-    "layout/forms",
-
-    "layout/page",
-    "layout/archive",
-    "layout/sidebar",
-    "layout/json_cv",
-
-    "vendor/font-awesome/fontawesome",
-    "vendor/font-awesome/solid",
-    "vendor/font-awesome/brands"
-;
+/* Masthead title + menu */
+.masthead,
+.masthead *,
+.site-title,
+.greedy-nav .site-title,
+.greedy-nav a,
+.masthead__menu-item a {
+  font-family: "Tinos", serif !important;
+  font-weight: 700;
+}

@@ -1,0 +1,27 @@
+/* Apply Tinos everywhere */
+body,
+html {
+  font-family: "Tinos", serif !important;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Tinos", serif !important;
+  font-weight: 700;
+}
+
+/* Force font inside sidebar / profile area */
+.sidebar,
+.sidebar *,
+.author__content,
+.author__urls-wrapper,
+.page__meta,
+.nav__list a,
+footer {
+  font-family: "Tinos", serif !important;
+}
