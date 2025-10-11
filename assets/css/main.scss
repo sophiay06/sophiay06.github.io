@@ -58,3 +58,134 @@ footer {
   font-family: "Tinos", serif !important;
   font-weight: 700;
 }
+
+/* === Remove all icon placeholders === */
+.fa,
+.fab,
+.fas,
+.far,
+.ai {
+  display: none !important;
+  content: none !important;
+}
+
+// ---
+// ---
+
+// /*
+//  * This file controls what is imported from /_sass
+//  *
+//  * Note that the files are processed in the order they are imported, so they are partly
+//    sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
+//  */
+
+// @import "vendor/breakpoint/breakpoint", "themes",
+//   "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
+//   "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
+//   "include/mixins", "vendor/susy/susy", "layout/reset", "layout/base",
+//   "include/utilities", "layout/tables", "layout/buttons", "layout/notices",
+//   "layout/masthead", "layout/navigation", "layout/footer", "syntax",
+//   "layout/forms", "layout/page", "layout/archive", "layout/sidebar",
+//   "layout/json_cv", "vendor/font-awesome/fontawesome",
+//   "vendor/font-awesome/solid", "vendor/font-awesome/brands";
+// /* === Fonts (loaded last, overrides theme) === */
+// @import url("https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap");
+
+// /* Global */
+// html,
+// body {
+//   font-family: "Tinos", serif !important;
+// }
+
+// /* Headings */
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+//   font-family: "Tinos", serif !important;
+//   font-weight: 700;
+// }
+
+// /* Sidebar, meta, nav */
+// .sidebar,
+// .sidebar *,
+// .author__content,
+// .author__urls-wrapper,
+// .page__meta,
+// .nav__list a,
+// footer {
+//   font-family: "Tinos", serif !important;
+// }
+
+// /* Masthead title + menu */
+// .masthead,
+// .masthead *,
+// .site-title,
+// .greedy-nav .site-title,
+// .greedy-nav a,
+// .masthead__menu-item a {
+//   font-family: "Tinos", serif !important;
+//   font-weight: 700;
+// }
+
+// /* === Tinos global === */
+// @import url("https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap");
+// html,
+// body {
+//   font-family: "Tinos", serif !important;
+// }
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+//   font-family: "Tinos", serif !important;
+//   font-weight: 700;
+// }
+
+// /* Non-icon text in common areas */
+// .author__content,
+// .author__urls-wrapper li,
+// .author__urls-wrapper a,
+// .page__meta,
+// .nav__list a,
+// footer,
+// .masthead,
+// .masthead *,
+// .site-title,
+// .greedy-nav .site-title,
+// .greedy-nav a,
+// .masthead__menu-item a {
+//   font-family: "Tinos", serif !important;
+// }
+
+// /* === Restore icon fonts (FA5 + Academicons), including ::before === */
+// .fa,
+// .fas,
+// .far,
+// .fa::before,
+// .fas::before,
+// .far::before {
+//   font-family: "Font Awesome 5 Free" !important;
+// }
+// .fas,
+// .fas::before {
+//   font-weight: 900 !important;
+// } /* solid */
+// .far,
+// .far::before {
+//   font-weight: 400 !important;
+// } /* regular */
+// .fab,
+// .fab::before {
+//   font-family: "Font Awesome 5 Brands" !important;
+//   font-weight: 400 !important;
+// }
+// .ai,
+// .ai::before {
+//   font-family: "Academicons" !important;
+//   font-weight: 400 !important;
+// }

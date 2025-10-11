@@ -158,6 +158,7 @@ include:
   - _pages
   - files
   - assets/css/custom.css
+  - assets/fonts
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
